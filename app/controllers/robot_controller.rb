@@ -14,9 +14,12 @@ class RobotController < ApplicationController
 
   def lock
     if @robi.lock != "OK"
-      flash[:alert] = "Ktoś już używa tego robota!!"      
+      flash[:alert] = "Ktoś już używa tego robota!!"
+    else
+      @credit = current_user.credits.create(credits: false)
     end 
-    redirect_to robot_index_path   
+
+    redirect_to robot_index_path
   end
 
   def forward

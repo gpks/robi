@@ -1,0 +1,37 @@
+
+
+<div class="container-fluid">
+<%= form_tag("/credits", method: "post") do %>
+
+
+<div class="field">
+    <%= label_tag :number %><br>
+    <%= text_field_tag :number %>
+  </div>
+  <div class="field">
+    <%= label_tag :month %><br>
+    <%= text_field_tag :month %>
+  </div>
+  <div class="field">
+    <%= label_tag :year %><br>
+    <%= text_field_tag :year %>
+  </div>
+  <div class="field">
+    <%= label_tag :first_name %><br>
+    <%= text_field_tag :first_name %>
+  </div>
+  <div class="field">
+    <%= label_tag :last_name %><br>
+    <%= text_field_tag :last_name %>
+  </div>
+  <div class="field">
+    <%= label_tag :verification_value %><br>
+    <%= text_field_tag :verification_value %>
+  </div>
+  
+  <div class="actions">
+    <%= submit_tag %>
+    <% end %>
+  </div>
+
+  </div>

@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  
+  resources :credits
+
   devise_for :users
   get "robot/index"
   get "robot/lock"

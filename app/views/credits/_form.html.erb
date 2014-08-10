@@ -1,0 +1,32 @@
+<%= form_for(@credit_card) do |f| %>
+
+
+<div class="field">
+    <%= f.label :number %><br>
+    <%= f.text_field :number %>
+  </div>
+  <div class="field">
+    <%= f.label :month %><br>
+    <%= f.text_field :month %>
+  </div>
+  <div class="field">
+    <%= f.label :year %><br>
+    <%= f.text_field :year %>
+  </div>
+  <div class="field">
+    <%= f.label :first_name %><br>
+    <%= f.text_field :first_name %>
+  </div>
+  <div class="field">
+    <%= f.label :last_name %><br>
+    <%= f.text_field :last_name %>
+  </div>
+  <div class="field">
+    <%= f.label :verification_value %><br>
+    <%= f.text_field :verification_value %>
+  </div>
+  
+  <div class="actions">
+    <%= f.submit %>
+    <% end %>
+  </div>
