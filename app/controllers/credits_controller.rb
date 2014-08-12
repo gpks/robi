@@ -39,7 +39,7 @@ class CreditsController < ApplicationController
 end
 
 
-    # @credit = current_user.credits.create(credits: true)
-    # redirect_to robot_index_path
+    flash[:alert] = "Błąd!!"
+    render :new
   end
 end
