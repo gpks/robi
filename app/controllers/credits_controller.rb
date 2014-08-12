@@ -36,10 +36,9 @@ class CreditsController < ApplicationController
     flash[:alert] = "Błąd!!"
     render :new
   end
-end
-
-
+ else
     flash[:alert] = "Błąd!!"
     render :new
+  end
   end
 end
