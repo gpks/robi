@@ -1,0 +1,80 @@
+<div class="container-fluid"><h1> Przejmij władzę nad światem!! </h1> </div>
+
+<!--<div class="center-block">-->
+
+<div class="container-fluid">
+  <div class="row">
+  <div class="col-md-8">
+  
+  
+
+
+    <%= link_to robot_lock_path, :class =>"btn btn-success btn-lg" do %>
+    <i class="glyphicon glyphicon-off"></i> URUCHOM
+    <% end %>
+
+   </div>
+   </div>
+ <br>
+  
+<div class="row">
+  <div class="col-md-4">
+    <%= link_to robot_forward_path, :class =>"btn btn-info" do%>
+    <i class="glyphicon glyphicon-fast-forward"></i> DO PRZODU
+    <% end %>
+      </div>
+     <div class="col-md-4">
+    <%= link_to robot_backward_path, :class =>"btn btn-info" do%>
+    <i class="glyphicon glyphicon-fast-backward"></i> DO TYŁU
+    <% end %>
+    </div>
+
+  </div>
+ <br>
+  <div class="row">
+  <div class="col-md-4">
+  <%= link_to robot_slow_forward_path, :class =>"btn btn-info" do %>
+  <i class="glyphicon glyphicon-step-forward"></i> POWOLI DO PRZODU
+  <% end %>
+  </div>
+     <div class="col-md-4">
+  
+    <%= link_to robot_slow_backward_path, :class =>"btn btn-info" do %>
+    <i class="glyphicon glyphicon-step-backward"></i> POWOLI DO TYŁU
+    <% end %> 
+  </div>
+  </div>
+  <br>
+<div class="row">
+  <div class="col-md-4">
+  <%= link_to robot_right_path, :class =>"btn btn-info" do%>
+  <i class="glyphicon glyphicon-arrow-right"></i> PRAWO
+  <% end %>
+  </div>
+     <div class="col-md-4">
+  
+  <%= link_to robot_left_path, :class =>"btn btn-info" do %>
+  <i class="glyphicon glyphicon-arrow-left"></i> LEWO
+  <% end %>
+  </div>
+  </div>
+  <br>
+  <div class="row">
+  <div class="col-md-4">
+  <%= link_to robot_run_path, :class =>"btn btn-warning" do%>
+  <i class="glyphicon glyphicon-dashboard"></i> OSTRZA
+  <% end %>
+  </div>
+     <div class="col-md-4">
+ 
+  <%= link_to robot_attack_path, :class =>"btn btn-danger" do %>
+  <i class="glyphicon glyphicon-asterisk"></i> ATAK
+  <% end %>
+  </div>
+  </div>
+<br>
+Odległość to <%= @proxi %>
+
+</div>
+
+
